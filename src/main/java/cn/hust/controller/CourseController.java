@@ -21,7 +21,7 @@ public class CourseController {
 
     @RequestMapping(value = "/findAllCourse",produces = "application/json; charset=utf-8")
     public @ResponseBody String findAllCourse() throws JsonProcessingException {
-        System.out.println("表现层  查询所有课程");
+        System.out.println("表现层  查询所有的课程");
         List<Course> allCourse = courseService.findAllCourse();
         for(Course course:allCourse){
             System.out.println(course);
